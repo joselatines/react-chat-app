@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# React chat app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In this application you can send messages, images, create and delete chat rooms, add people to rooms, view the history of messages and images.
 
-## Available Scripts
+All backend functions comes from this [API](https://chatengine.io/). User data is saved on your local storage.
 
-In the project directory, you can run:
+## Test the app
 
-### `npm start`
+You can login to the app with these users
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- user1 - 123
+- user2 - 123
+- user3 - 123
+- user4 - 123
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+There is no logout button, to logout you need to delete your local storage.
 
-### `npm test`
+    > 1. Open Google Chrome Console by pressing F12 key.
+    > 2. Select “Application” in the top menu of the console.
+    > 3. Select "Local Storage" from the menu on the left of the console.
+    > 4. Right click on your site(s) and click delete to remove local storage.
+    > 5. Reload the page
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Things Learned
 
-### `npm run build`
+While doing this project I learned useful concepts and ways to make things with react. For example, local storage is a good way to save the user data to make a simple login, new ways and cases to use spread and ternary operators, I learned how to split my code into react components to have the code logic in one place.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Things to improve
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This code was made following a youtube tutorial, if I had time I would improve the duration it takes for the app to switch between each room, convert the css styles into styled components or css modules and I would also add a logout button.
